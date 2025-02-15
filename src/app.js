@@ -14,6 +14,7 @@ app.use(
 app.get("/", (req, res) => {
 	res.send("Working Fine!");
 });
+app.get("/favicon.ico", (req, res) => res.status(204).end());
 
 app.use("/ai", aiRoute);
 
